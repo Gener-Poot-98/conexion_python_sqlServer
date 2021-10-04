@@ -17,13 +17,3 @@ nombre VARCHAR(255) NOT NULL,
 direc VARCHAR(255) NOT NULL,
 
 )
-
-CREATE TABLE pelicula_cines(
-
-idPc int identity(1,1) primary key,
-
-idPel int references peliculas,
-
-idCine int references cines,
-
-) 
